@@ -86,6 +86,10 @@ const Navbar = ({ }) => {
             <li className="nav-item me-md-4">
               <Link className="nav-link" to="/Apropos" style={getLinkStyle("/Apropos")} onClick={closeNavbar}>À propos</Link>
             </li>
+            <li className="nav-item me-md-4">
+              {/* Le lien vers la page de contact a été ajouté ici */}
+              <Link className="nav-link" to="/contact" style={getLinkStyle("/contact")} onClick={closeNavbar}>Contactez-nous</Link>
+            </li>
           </ul>
         </div>
       </div>
