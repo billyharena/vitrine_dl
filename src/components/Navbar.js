@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = ({ }) => {
+const Navbar = () => {
   const location = useLocation();
   const navbarCollapseRef = useRef(null);
   const navbarTogglerRef = useRef(null);

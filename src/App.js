@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import Services from "./components/Services";
@@ -17,12 +17,9 @@ import ScrollToTop from "./ScrollToTop";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs"; // 1. Importez le composant ContactUs
 
-// import SuggestionsCalendar from "./components/SuggestionsCalendar";
-// import ListeAvisClients from "./components/ListeAvisClients";
-// import QuizzPage from "./components/QuizzPage";
 
 const App = () => {
-  const [token, setToken] = useState(localStorage.getItem("token"));
+  // const [token, setToken] = useState(localStorage.getItem("token"));
 
   // useEffect(() => {
   //   setToken(localStorage.getItem("token"));

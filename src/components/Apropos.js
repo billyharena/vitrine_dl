@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { motion, useInView } from "framer-motion";
+// import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
     <SectionWrapper>
-      <SectionHeader 
-        title="À propos" 
+      <SectionHeader
+        title="À propos"
         text="Data Light se positionne en spécialiste de la convergence de la Data, offrant des formations uniques pour faire de la formation un atout stratégique et faciliter la transformation et l’innovation au sein de votre entreprise."
       />
       <CardGrid>
@@ -33,7 +33,7 @@ const AboutSection = () => {
 const PlusSection = () => {
   return (
     <SectionWrapper>
-      <SectionHeader 
+      <SectionHeader
         title="Offrez-vous plus qu’une formation"
       />
       <CardGrid>
@@ -59,7 +59,7 @@ const PlusSection = () => {
 
 // Composants réutilisables
 const SectionWrapper = ({ children }) => (
-  <motion.section 
+  <motion.section
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: true, margin: "-100px" }}
@@ -78,7 +78,7 @@ const SectionHeader = ({ title, text }) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="row mb-5"
       initial="hidden"
       whileInView="visible"
@@ -86,14 +86,14 @@ const SectionHeader = ({ title, text }) => {
       transition={{ staggerChildren: 0.2 }}
     >
       <div className="col-md-8 col-xl-6 text-center mx-auto">
-        <motion.h2 
+        <motion.h2
           className="display-5 fw-bold mb-4 gradient-text"
           variants={variants}
         >
           {title}
         </motion.h2>
         {text && (
-          <motion.p 
+          <motion.p
             className="lead text-muted mb-0"
             variants={variants}
           >
@@ -106,13 +106,13 @@ const SectionHeader = ({ title, text }) => {
 };
 
 const CardGrid = ({ children }) => (
-  <motion.div 
+  <motion.div
     className="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3"
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true, margin: "-100px" }}
     transition={{ staggerChildren: 0.1 }}
-    
+
   >
     {children}
   </motion.div>
@@ -121,15 +121,15 @@ const CardGrid = ({ children }) => (
 const AnimatedCard = ({ imgSrc, title, text }) => {
   const cardVariants = {
     hidden: { scale: 0.95, opacity: 0 },
-    visible: { 
-      scale: 1, 
+    visible: {
+      scale: 1,
       opacity: 1,
       transition: { type: "spring", stiffness: 300 }
     }
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="col"
       variants={cardVariants}
       whileHover={{ scale: 1.05 }}
@@ -139,7 +139,7 @@ const AnimatedCard = ({ imgSrc, title, text }) => {
           <img
             className="card-img-top w-100 d-block"
             alt={title}
-            style={{ 
+            style={{
               height: "240px",
               objectFit: "cover",
               objectPosition: "center",
