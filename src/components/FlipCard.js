@@ -43,8 +43,9 @@ const FlipCard = () => {
           >
             <h2 className="fw-bold mb-2">AVEC</h2>
             <div className="mb-3">
-              <img 
+              <img
                 src="/assets/img/Copyr.png"
+                alt="Logo de l'entreprise Data Light"
                 style={{ height: "90px", objectFit: "cover" }}
               />
             </div>
@@ -73,10 +74,10 @@ const FlipCard = () => {
           >
             <h4 className="fw-bold">Nos valeurs :</h4>
             <ul>
-                <li>Ambition</li>
-                <li>Innovation</li>
-                <li>Implication</li>
-                <li>Agréabilité</li>
+              <li>Ambition</li>
+              <li>Innovation</li>
+              <li>Implication</li>
+              <li>Agréabilité</li>
             </ul>
           </div>
         </motion.div>
