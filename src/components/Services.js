@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import formationsData from "../data/formations.json"; // Assurez-vous que ce chemin est correct
 
@@ -170,16 +170,23 @@ const Services = () => {
                       dangerouslySetInnerHTML={{ __html: formation.descriptions }} />
                   </div>
                 </div>
-                <a
-                  className="btn btn-warning mt-3 px-4 py-2 fw-bold shadow-sm"
-                  href={`/formations/${formation.id}`}
-                  style={{ borderRadius: "8px", width: "100%", fontSize: "1.1rem" }}
-                >
-                  VOIR LES MODULES
-                </a>
               </div>
             </div>
           ))}
+        </div>
+        <div className="row justify-content-center mb-3">
+          <div className="col-6 text-center">
+            <a
+              className="btn btn-warning mt-3 px-4 py-2 fw-bold shadow-sm"
+              href="/img/Catalogue_Data_light_2025.pdf" // Le chemin d'accès à votre PDF dans le dossier public
+              download // Attribut 'download' pour forcer le téléchargement
+              style={{ transition: "all 0.3s ease" }}
+              onMouseEnter={(e) => e.target.style.transform = "translateY(-3px)"}
+              onMouseLeave={(e) => e.target.style.transform = "translateY(0)"}
+            >
+              Télécharger notre catalogue de formation pour voir tous les modules disponibles pour nos formations !
+            </a>
+          </div>
         </div>
         <br></br>
         <br></br>
@@ -187,48 +194,48 @@ const Services = () => {
       </div>
 
       <style jsx>{`
-        .flip-card {
-          background-color: transparent;
-          width: 350px;
-          height: 350px;
-          perspective: 1000px;
-          text-align: center;
-        }
+    .flip-card {
+     background-color: transparent;
+     width: 350px;
+     height: 350px;
+     perspective: 1000px;
+     text-align: center;
+    }
 
-        .flip-card-inner {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.6s;
-          transform-style: preserve-3d;
-        }
+    .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: transform 0.6s;
+     transform-style: preserve-3d;
+    }
 
-        .flip-card:hover .flip-card-inner {
-          transform: rotateY(180deg);
-        }
+    .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
+    }
 
-        .flip-card-front, .flip-card-back {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          backface-visibility: hidden;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 10px;
-        }
+    .flip-card-front, .flip-card-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+    }
 
-        .flip-card-front {
-          background: white;
-        }
+    .flip-card-front {
+     background: white;
+    }
 
-        .flip-card-back {
-          background: rgba(0, 115, 104, 0.9);
-          color: rgba(251, 201, 102, 1);
-          transform: rotateY(180deg);
-          padding: 20px;
-        }
-      `}</style>
+    .flip-card-back {
+     background: rgba(0, 115, 104, 0.9);
+     color: rgba(251, 201, 102, 1);
+     transform: rotateY(180deg);
+     padding: 20px;
+    }
+   `}</style>
     </section>
   );
 };
