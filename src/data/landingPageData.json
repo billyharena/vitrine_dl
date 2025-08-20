@@ -1,0 +1,33 @@
+{
+    "logos": [
+        "https://www.africa-newsroom.com/files/large/299d0548dcf1e65",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBWwKE-oWF7kecA6cveXkMvrq4QRIaU6tKSA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUW6QtN8dquiiUm44CyLy0VKS-vd4MCeaqA&s",
+        "https://th.bing.com/th/id/OIP.U-yiugWJQdVA2LKcrAkRqQHaEK?rs=1&pid=ImgDetMain",
+        "https://mevatic.mg/assets/img/logo-pamf.png",
+        "https://th.bing.com/th/id/OIP.gX8i4kckNBc2RPsAhLpbPQHaHa?rs=1&pid=ImgDetMain",
+        "https://th.bing.com/th/id/OIP.c8y9NTaNjH8l-dziWICr2QHaHa?rs=1&pid=ImgDetMain",
+        "https://th.bing.com/th/id/R.bc9f2d1aea68407b5faa6c9661ac1c7b?rik=K%2bvI9ly%2fQVww2Q&pid=ImgRaw&r=0",
+        "https://media.licdn.com/dms/image/v2/D4E0BAQGovKKDGaibEQ/company-logo_200_200/company-logo_200_200/0/1733147335588?e=2147483647&v=beta&t=RABBMGb0qBeJ5KHA5LYOcOb2qk-X13Y7fVwaK53fHuU"
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "avis": "Une formation très complète et des formateurs passionnés. J'ai beaucoup appris !",
+            "nom": "Jean",
+            "prenom": "Dupont"
+        },
+        {
+            "id": 2,
+            "avis": "Le support de cours est excellent et l'accompagnement personnalisé fait toute la différence.",
+            "nom": "Marie",
+            "prenom": "Lambert"
+        },
+        {
+            "id": 3,
+            "avis": "Les exercices pratiques m'ont vraiment aidé à consolider mes connaissances.",
+            "nom": "Pierre",
+            "prenom": "Martin"
+        }
+    ]
+}

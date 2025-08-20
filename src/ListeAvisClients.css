@@ -1,0 +1,95 @@
+.liste-avis-clients-container {
+    padding: 25px; /* Augmentation du padding pour plus d'espace intérieur */
+    background-color: #f9f9f9; /* Légère modification de la couleur de fond */
+    border: 1px solid #e0e0e0; /* Bordure plus discrète */
+    border-radius: 8px; /* Bords légèrement plus arrondis pour un aspect plus doux */
+    margin: 20px auto; /* Centrage horizontal et marges verticales */
+    max-width: 800px; /* Limitation de la largeur pour une meilleure lisibilité sur grands écrans */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Légère ombre pour un effet de profondeur */
+}
+
+.avis-liste {
+    list-style: none;
+    padding: 0;
+}
+
+.avis-item {
+    background-color: #fff;
+    border: 1px solid #d3d3d3; /* Bordure légèrement plus claire */
+    border-radius: 8px; /* Bords arrondis cohérents */
+    padding: 20px; /* Augmentation du padding intérieur */
+    margin-bottom: 20px; /* Augmentation de la marge entre les avis */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); /* Légère ombre pour séparer les avis */
+}
+
+.client-info {
+    display: flex; /* Utilisation de flexbox pour aligner les informations du client */
+    align-items: center; /* Alignement vertical au centre */
+    margin-bottom: 10px;
+}
+
+.client-info strong {
+    font-weight: bold;
+    margin-right: 8px; /* Plus d'espace après "Client:" */
+    color: #333; /* Couleur de texte plus foncée pour le titre */
+}
+
+.note-avis {
+    display: flex; /* Utilisation de flexbox pour aligner "Note:" et les étoiles */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.note-avis strong {
+    font-weight: bold;
+    margin-right: 8px; /* Plus d'espace après "Note:" */
+    color: #333; /* Couleur de texte plus foncée pour le titre */
+}
+
+.star-rating-display {
+    font-size: 1.4em; /* Étoiles légèrement plus grandes */
+    color: #ffc107; /* Couleur or plus vive pour les étoiles actives */
+    color: #ccc; /* Couleur des étoiles inactives */
+    display: inline-flex; /* Utilisation de inline-flex pour un meilleur contrôle de l'espacement */
+    gap: 2px; /* Léger espacement entre les étoiles */
+}
+
+.star-rating-display .star-filled {
+    color: #ffc107; /* Couleur or plus vive pour les étoiles remplies */
+}
+
+.commentaire {
+    margin-bottom: 15px;
+    line-height: 1.6; /* Amélioration de la lisibilité du texte */
+}
+
+.commentaire strong {
+    font-weight: bold;
+    margin-right: 8px; /* Plus d'espace après "Commentaire:" */
+    color: #333; /* Couleur de texte plus foncée pour le titre */
+    display: block; /* "Commentaire:" sur une ligne séparée pour plus de clarté */
+    margin-bottom: 5px;
+}
+
+.commentaire p {
+    margin-top: 0; /* Suppression de la marge supérieure par défaut du paragraphe */
+    color: #555; /* Couleur de texte légèrement plus claire pour le commentaire */
+    white-space: pre-line; /* Conserve les sauts de ligne */
+}
+
+.date-avis {
+    font-size: 0.9em;
+    color: #777; /* Couleur de texte légèrement plus foncée pour la date */
+    margin-top: 10px;
+    text-align: right; /* Alignement de la date à droite */
+}
+
+/* Styles pour les états de chargement et d'erreur (facultatif mais recommandé) */
+p {
+    color: #333; /* Couleur de texte par défaut pour les paragraphes */
+}
+
+.text-danger {
+    color: #dc3545; /* Couleur rouge pour les messages d'erreur */
+    font-weight: bold;
+}

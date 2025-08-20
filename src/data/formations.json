@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "formation": "Excel",
+        "img": "img/exceller.png",
+        "descriptions": "<p>Faites des calculs de manière rapide et précis, utilisez Excel afin de facilité la gestion de vos données et donnez vous l’occasion par la suite de les présenter ainsi que de les gérer facilement et efficacement.</p>"
+    },
+    {
+        "id": 2,
+        "formation": "Power BI",
+        "img": "img/power-bi.png",
+        "descriptions": "<p>Visualisez chaque éléments dans son grand ensemble pour prendre une décision plus éclairée, et faites des choix rapides sans compromettre la rentabilité de votre entreprise, en transformant des données en visuels accessibles par tous. Power BI, l’outil qui différencie une entreprise normale et une entreprise productive, agile et réactive.</p>"
+    },
+    {
+        "id": 3,
+        "formation": "Google Sheets",
+        "img": "img/google-sheets-1.png",
+        "descriptions": "<p>Explorez les bases fondamentales et les fonctionnalités clés pour une utilisation efficace de Google Sheets. Simplifiez vos suivis et la gestion des ressources avec chaque formule maîtrisée.</p>"
+    }
+]
