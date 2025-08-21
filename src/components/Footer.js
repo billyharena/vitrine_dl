@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
             <h3 className="fs-6 fw-bold" style={{ color: "rgba(177, 208, 229, 1)" }}>Contact</h3>
             <ul className="list-unstyled">
-              <li><a href="tel:+261342218839" style={{ color: "rgba(177, 208, 229, 1)" }}>+261 34 22 188 39</a></li>
+              <li><a href="tel:+261342218839" style={{ color: "rgba(177, 208, 229, 1)" }}>+261 38 06 963 92</a></li>
               <li><a href="mailto:contact@genese.expert" style={{ color: "rgba(177, 208, 229, 1)" }}>contact-data-light@gmail.com</a></li>
               <li><a href="https://maps.app.goo.gl/SWyUPAXUY4KzcXRd8" style={{ color: "rgba(177, 208, 229, 1)" }}>Data Light Madagascar</a></li>
             </ul>
